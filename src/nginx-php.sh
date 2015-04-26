@@ -125,7 +125,7 @@ make clean
 CFLAGS= CXXFLAGS= ./configure --prefix=/usr/local/php --with-config-file-path=/usr/local/php/etc \
 --with-fpm-user=www --with-fpm-group=www --enable-fpm --disable-fileinfo \
 --with-mysql=mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd \
---with-iconv-dir=/usr/local --with-freetype-dir --with-jpeg-dir --with-png-dir --with-zlib \
+--with-iconv-dir=/usr/local --with-jpeg-dir --with-png-dir --with-zlib \
 --with-libxml-dir=/usr --enable-xml --disable-rpath --enable-bcmath --enable-shmop --enable-exif \
 --enable-sysvsem --enable-inline-optimization --with-curl --enable-mbregex --enable-inline-optimization \
 --enable-mbstring --with-mcrypt --with-gd --enable-gd-native-ttf --with-openssl \
@@ -266,6 +266,3 @@ cp tz.php /home/wwwroot/default/
 
 cd /home/wwwroot/
 rm -rf /usr/local/src/*
-
-service php-fpm start
-service nginx start

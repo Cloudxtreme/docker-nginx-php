@@ -1,5 +1,7 @@
 dbrootpwd="123456"
 
+apt-get install libaio-dev
+
 DOWN_ADDR=https://downloads.mariadb.org/f
 [ -d "/lib64" ] && { SYS_BIT_a=x86_64;SYS_BIT_b=x86_64; } || { SYS_BIT_a=x86;SYS_BIT_b=i686; }
 LIBC_VERSION=`getconf -a | grep GNU_LIBC_VERSION | awk '{print $NF}'`

@@ -52,8 +52,8 @@ cat > /usr/local/php-5.3.29/etc/php-fpm.conf <<EOF
 ; Global Options ;
 ;;;;;;;;;;;;;;;;;;
 [global]
-pid = run/php-fpm-5.3.29.pid
-error_log = log/php-fpm-5.3.29.log
+pid = run/php-fpm.pid
+error_log = log/php-fpm.log
 log_level = warning 
 emergency_restart_threshold = 30
 emergency_restart_interval = 60s 
